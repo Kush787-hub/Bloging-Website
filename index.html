@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HK Blogs - Discover the latest insights on technology, lifestyle, and innovation">
+    <meta name="keywords" content="blog, technology, lifestyle, innovation, gadgets">
+    <meta name="author" content="HK Blogs">
+    <title>HK Blogs - Technology & Lifestyle Insights</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>HK Blogs</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">Technology</a>
+                <a href="#" class="nav-link">Lifestyle</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="header_container">
+            <h1 class="header_title">HK Blogs</h1>
+            <p class="header_para">Discover the latest insights on technology, lifestyle, and innovation. Stay updated with cutting-edge trends and practical tips for modern living.</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search articles..." class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="technology">Technology</button>
+                <button class="filter-btn" data-category="lifestyle">Lifestyle</button>
+                <button class="filter-btn" data-category="innovation">Innovation</button>
+            </div>
+        </header>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle">
+            <button id="themeToggle" class="theme-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main_container">
+            <!-- Blog Card 1 -->
+            <div class="cardholder" data-category="technology">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&h=300&fit=crop" alt="Latest smartphone technology" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                </a>
+
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Revolutionary Smartphone Features in 2024</h2>
+                        <p class="card_description">Explore the cutting-edge features that are transforming mobile technology, from foldable displays to advanced AI capabilities.</p>
+                    </a>
+                </div>
+        
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=John&size=64" class="author_avatar" alt="John Doe">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">John Doe</span>
+                            <span class="author_date">Dec 15, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="#">Technology</a>
+                    </div>
+                </div>
+
+                <!-- Share Buttons -->
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook" aria-label="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="cardholder" data-category="lifestyle">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=300&fit=crop" alt="Healthy lifestyle tips" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 7 min read</span>
+                    </div>
+                </a>
+
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">10 Essential Habits for a Productive Morning</h2>
+                        <p class="card_description">Transform your mornings with these science-backed habits that will boost your productivity and set a positive tone for the entire day.</p>
+                    </a>
+                </div>
+        
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah&size=64" class="author_avatar" alt="Sarah Johnson">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Sarah Johnson</span>
+                            <span class="author_date">Dec 14, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Lifestyle</a>
+                    </div>
+                </div>
+
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="cardholder" data-category="innovation">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop" alt="AI innovation" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 8 min read</span>
+                    </div>
+                </a>
+
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">The Future of AI: What to Expect in 2025</h2>
+                        <p class="card_description">Dive into the exciting developments in artificial intelligence and how they will reshape industries and daily life.</p>
+                    </a>
+                </div>
+        
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mike&size=64" class="author_avatar" alt="Mike Chen">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Mike Chen</span>
+                            <span class="author_date">Dec 13, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Innovation</a>
+                    </div>
+                </div>
+
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="cardholder" data-category="technology">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=300&fit=crop" alt="Web development trends" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                </a>
+
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Web Development Trends That Will Dominate 2024</h2>
+                        <p class="card_description">Stay ahead of the curve with these emerging web development technologies and frameworks that are gaining momentum.</p>
+                    </a>
+                </div>
+        
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Emma&size=64" class="author_avatar" alt="Emma Wilson">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Emma Wilson</span>
+                            <span class="author_date">Dec 12, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Technology</a>
+                    </div>
+                </div>
+
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 5 -->
+            <div class="cardholder" data-category="lifestyle">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Remote work setup" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 9 min read</span>
+                    </div>
+                </a>
+
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Creating the Perfect Remote Work Environment</h2>
+                        <p class="card_description">Design a productive and comfortable home office that maximizes your efficiency and work-life balance.</p>
+                    </a>
+                </div>
+        
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=David&size=64" class="author_avatar" alt="David Brown">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">David Brown</span>
+                            <span class="author_date">Dec 11, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Lifestyle</a>
+                    </div>
+                </div>
+
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 6 -->
+            <div class="cardholder" data-category="innovation">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Sustainable technology" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 7 min read</span>
+                    </div>
+                </a>
+
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Green Technology: Building a Sustainable Future</h2>
+                        <p class="card_description">Discover how innovative green technologies are helping combat climate change and create a more sustainable world.</p>
+                    </a>
+                </div>
+        
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa&size=64" class="author_avatar" alt="Lisa Garcia">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Lisa Garcia</span>
+                            <span class="author_date">Dec 10, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Innovation</a>
+                    </div>
+                </div>
+
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 7 -->
+            <div class="cardholder" data-category="productivity">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" alt="Productivity tips" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                </a>
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Boost Your Productivity with These Simple Hacks</h2>
+                        <p class="card_description">Discover actionable tips and tricks to enhance your daily productivity and achieve your goals faster.</p>
+                    </a>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex&size=64" class="author_avatar" alt="Alex Lee">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Alex Lee</span>
+                            <span class="author_date">Dec 16, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Productivity</a>
+                    </div>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 8 -->
+            <div class="cardholder" data-category="technology">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop" alt="Cloud computing" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                </a>
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Cloud Computing: The Backbone of Modern Business</h2>
+                        <p class="card_description">Learn how cloud technology is revolutionizing the way companies operate, collaborate, and scale in today's digital era.</p>
+                    </a>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Priya&size=64" class="author_avatar" alt="Priya Singh">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Priya Singh</span>
+                            <span class="author_date">Dec 17, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Technology</a>
+                    </div>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 9 -->
+            <div class="cardholder" data-category="innovation">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400&h=300&fit=crop" alt="Innovation in education" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 4 min read</span>
+                    </div>
+                </a>
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">How EdTech is Transforming Classrooms</h2>
+                        <p class="card_description">Explore the latest educational technologies that are making learning more interactive and accessible for everyone.</p>
+                    </a>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria&size=64" class="author_avatar" alt="Maria Gomez">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Maria Gomez</span>
+                            <span class="author_date">Dec 18, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Innovation</a>
+                    </div>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Blog Card 10 -->
+            <div class="cardholder" data-category="lifestyle">
+                <a href="#" class="card_image_container">
+                    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&h=300&fit=crop" alt="Healthy eating" class="card_image">
+                    <div class="card-overlay">
+                        <span class="reading-time"><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                </a>
+                <div class="card_text">
+                    <a href="#" class="card_title_anchor">
+                        <h2 class="card_heading">Healthy Eating: Simple Recipes for Busy People</h2>
+                        <p class="card_description">Quick and nutritious meal ideas for those with a hectic lifestyle, without compromising on taste or health.</p>
+                    </a>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <div class="avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Olivia&size=64" class="author_avatar" alt="Olivia Smith">
+                        </div>
+                        <div class="author_info">
+                            <span class="author_name">Olivia Smith</span>
+                            <span class="author_date">Dec 19, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card_tag">
+                        <a href="">Lifestyle</a>
+                    </div>
+                </div>
+                <div class="share-buttons">
+                    <button class="share-btn" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                    <button class="share-btn" title="Share on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="share-btn" title="Share on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button id="loadMoreBtn" class="load-more-btn">
+                <i class="fas fa-plus"></i> Load More Articles
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HK Blogs</h3>
+                    <p>Your source for the latest insights on technology, lifestyle, and innovation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Follow us on Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Like us on Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Connect on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Innovation</a></li>
+                        <li><a href="#">Productivity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 HK Blogs. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
